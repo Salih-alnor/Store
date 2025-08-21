@@ -1,0 +1,148 @@
+.NewProduct {
+    margin: 100px 0;
+}
+
+.NewProduct h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--grey);
+}
+
+.NewProduct .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    gap: 30px;
+}
+
+
+.NewProduct .card {
+   height: fit-content;
+   display: block;
+   border: .1px solid #DDD;
+   border-radius: var(--border);
+   position: relative;
+   overflow: hidden;
+}
+
+.NewProduct .card .icons {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    z-index: 4;
+}
+
+.NewProduct .card .icons .icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.NewProduct .card .icons .icon:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+    
+}
+
+.NewProduct .card:hover .icons {
+    left: 10px;
+}
+
+.NewProduct .card .image {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NewProduct .card .image img {
+    width: 100%;
+    
+}
+
+.NewProduct .card .description {
+    padding: 20px 10px;
+    
+}
+
+.NewProduct .card  .stars {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.NewProduct .card  .stars .icon {
+    color: var(--gold);
+    font-size: 17px;
+    padding-right: 3px;
+}
+
+.NewProduct .card  .stars p:last-child{
+    color: var(--grey);
+    font-weight: bold;
+}
+
+.NewProduct .card .description .productName {
+    color: var(--grey);
+}
+
+.NewProduct .card .description .price {
+    margin-bottom: 10px;
+}
+
+.NewProduct .card .description .price .after{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.NewProduct .card .description .price .before {
+    color: var(--grey);
+    font-size: 12px;
+    padding-left: 10px;
+    text-decoration: line-through;
+}
+
+.NewProduct .card .btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NewProduct .card button{
+    padding: 10px 0;
+    width: 100%;
+    border: none;
+    color: var(--main-color);
+    border-radius: var(--border);
+    cursor: pointer;
+    border: .1px solid var(--main-color);
+    background-color: transparent;
+}
+
+.NewProduct .card button:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    
+}
+
+
+
+@media (max-width: 677px) {
+    .NewProduct .cards {
+        grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+        gap: 20px;
+    }
+}
+
+
+
+
+

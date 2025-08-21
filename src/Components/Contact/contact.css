@@ -1,0 +1,141 @@
+.contact-us {
+    margin-top: 150px;
+}
+
+.contact-us > .title {
+    width: fit-content;
+    margin: auto auto 50px;
+    color: var(--grey);
+
+}
+
+.contact-us .addresses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 60px;
+}
+
+.contact-us .addresses > div {
+    border: .1px solid #DDD;
+    border-radius: var(--border);
+    height: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.contact-us .addresses > div .icon {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.contact-us .addresses > div .title {
+    color: var(--grey);
+    padding: 10px 0;
+}
+
+.contact-us .addresses > div p {
+    color: var(--grey);
+    font-size: 13px;
+}
+
+/* --------- form --------- */
+
+.contact-us .form {
+    display: flex;
+    margin: 240px 0;
+    align-items: center;
+}
+
+.contact-us .form .info {
+    height: fit-content;
+    border: 1px solid #DDD;
+    border-right: none;
+    padding: 20px;
+    width: 50%;
+}
+
+.contact-us .form .info h3 {
+    color: var(--grey);
+}
+
+.contact-us .form .info p {
+    color: var(--grey);
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.contact-us .form .info input,
+.contact-us .form .info textarea {
+    width: calc(50% - 10px);
+    margin: 10px 10px 0 0;
+    height: 30px;
+    outline: none;
+    border: .1px solid #DDD;
+    padding-left: 10px;
+    color: var(--grey);
+    letter-spacing: .5px;
+    border-radius: var(--border);
+}
+
+.contact-us .form .info textarea {
+    width: calc(100% - 10px);
+    padding-top: 10px;
+    height: 200px;
+}
+
+.contact-us .form .info button {
+    border: .1em solid var(--main-color);
+    padding: 8px 10px;
+    background: var(--main-color);
+    margin-top: 3px;
+    cursor: pointer;
+    border-radius: var(--border);
+    color: var(--white);
+}
+
+.contact-us .form .map {
+    height: 550px;
+    width: 50%; 
+}
+
+.contact-us .form .map iframe {
+    border: 1px solid #DDD;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 677px) {
+    .contact-us .form {
+        flex-direction: column-reverse;
+    }
+
+    .contact-us .form .info {
+        width: 100%;
+        height: fit-content;
+        border-top: none;
+        border-right: .1px solid #DDD;
+    }
+
+    .contact-us .form .info input {
+        width: calc(50% - 10px)
+    }
+    .contact-us .form .info textarea {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .contact-us .form .info input:nth-of-type(2),
+    .contact-us .form .info input:nth-of-type(4) {
+        margin-right: 0;
+        width: 50%;
+    }
+
+    .contact-us .form .map {
+        width: 100%;
+    }
+}

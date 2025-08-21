@@ -1,0 +1,83 @@
+.clients {
+margin: 100px 0 0 0;
+}
+
+.clients > h2 {
+    color: var(--grey);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clients .card {
+    border: .1px solid #ddd;
+    padding: 20px;
+    height: fit-content;
+    cursor: pointer;
+    border-radius: var(--border);
+}
+
+.clients .card .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.clients .image {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+    
+}
+
+.clients .image img {
+    width: 100%;
+}
+
+.clients .card .head .name {
+    margin-left: 15px;
+}
+
+.clients .card .head .name h3 {
+    color: var(--grey);
+    margin-bottom: -10px;
+}
+
+.clients .card .head .name span {
+    color: var(--grey);
+    font-size: 13px;
+}
+
+.clients .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 5px;
+}
+
+.clients .icons .star {
+    color: var(--gold);
+    font-size: 17px;
+    padding-right: 2px;
+}
+
+.clients .icons .like .icon {
+    color: #DDD;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.clients .icons .like .icon:hover {
+    color: var(--main-color);
+}
+
+.clients .client-content {
+    font-size: 13px;
+    color: #999;
+}
+
+@media (max-width: 677px) {
+    
+}

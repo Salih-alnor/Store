@@ -1,0 +1,91 @@
+.about-us {
+    margin-top: 150px;
+}
+
+.about-us .container {
+    display: flex;
+    align-items: center;
+}
+
+.about-us .container div {
+    width: 50%;
+}
+
+.about-us .container .about-us-logo {
+    background-color: #EEE;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-us .container .about-us-logo .logo {
+    background-color: #DDD;
+    height: 300px; width: 300px;
+    border-radius: 50%;
+    display: flex;
+    font-size: 45px;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey);
+    cursor: pointer;
+}
+
+.about-us .container .about-us-logo .logo .icon {
+    color: var(--main-color);
+    font-size: 80px;
+}
+
+.about-us .container .about-us-content {
+    height: 350px;
+    border: .1px solid #EEE;
+    border-left: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-us .container .about-us-content h2 {
+    color: var(--grey);
+}
+
+.about-us .container .about-us-content p {
+    margin: 10px 0;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+.about-us .container .about-us-content button {
+    border: .1em solid var(--main-color);
+    padding: 8px 10px;
+    background: transparent;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: var(--border);
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+.about-us .container .about-us-content button:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+@media (max-width: 677px) {
+    .about-us .container {
+        flex-direction: column;
+    }
+
+    .about-us .container div {
+        width: 100%;
+    }
+
+    .about-us .container .about-us-content {
+        border-left: .1px solid #EEE;
+        height: fit-content;
+    }
+}

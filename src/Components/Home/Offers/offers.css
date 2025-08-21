@@ -1,0 +1,67 @@
+.offers {
+    margin-top: 100px;
+}
+
+.offers .title {
+    color: var(--grey);
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.offers .cards {
+    padding: 20px 0;
+}
+
+.offers .card {
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: .1px solid #ddd;
+    border-radius: var(--border);
+    cursor: pointer;
+    
+}
+
+.offers .card .offer {
+    width: 40%;
+    text-align: start;
+}
+
+.offers .card .offer .product-name {
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.offers .card .offer p {
+    font-size: 11px;
+}
+
+.offers .card .offer button {
+    border: .1em solid var(--main-color);
+    padding: 8px 15px;
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: var(--border);
+    color: var(--main-color);
+}
+
+.offers .card .offer button:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.offers .card .image {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.offers .card .image img {
+    width: 80%
+}

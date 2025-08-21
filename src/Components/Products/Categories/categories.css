@@ -1,0 +1,40 @@
+.categories {
+    margin-top: 50px;
+}
+
+.categories > h2 {
+    width: fit-content;
+    margin: 100px auto;
+    color: var(--grey);
+}
+
+
+.categories .cards .card {
+    height: fit-content;
+    overflow: hidden;
+    border: .1px solid #DDD;
+    border-radius: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.categories .cards .card:hover {
+    border-color: var(--main-color);
+}
+
+.categories .cards .card .image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.categories .cards .card .image img {
+    width: 100%;
+}
+
+.categories .cards .card h4 {
+    color: var(--grey);
+}
