@@ -1,6 +1,6 @@
 Home page
-![Home page](./public/screenshots/home.jpg)
+![Home page](./public/screenshots/home.png)
 
 
 About page
-![Home page](./public/screenshots/about.jpg)
+![Home page](./public/screenshots/about.png)
