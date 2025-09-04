@@ -47,7 +47,7 @@ function Navbar() {
 
         <div className="signing">
           {/* <BsCartPlusFill /> */}
-          {userInfo ? (
+          {!userInfo ? (
             <p>{userInfo.name}</p>
           ) : (
             <button onClick={() => navigate("/auth/login")}>Login</button>
